@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+  --font-family: 'Poppins', sans-serif;
+  --font-family: 'Tilt Prism', cursive;
+  
+}
+body{
+    overflow-x: hidden;
+}
+.bar{
+    margin-top: 1%;
+    margin-right: 2%;
+    display: inline-block;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #999;
+    background-color: rgb(47, 47, 46);
+   
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: white;
+   }
+   .dropdown-content #h2dd{
+    color: white;
+   }
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #c92525;
+    min-width: 230px;
+    min-height: 150px;
+    box-shadow: 10px 15px 20px #2f2f2f;
+    padding: 25px 30px 30px 30px;
+    border-radius: 4px;
+   }
+   .dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+   }
+   @keyframes fadeIn {
+    from {
+     opacity: 0;
+     transform: translateY(-10px);
+    }
+    to {
+     opacity: 1;
+     transform: translateY(0);
+    }
+   }
+   a{
+    text-decoration: none;
+   }
+   #bar{
+    font-size: 25px;
+   }
+.banner{
+    width: 100%;
+    background: linear-gradient(rgba(125, 122, 124, 0.1), #2f2f2f), url(/images/PGronaldo.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 580px;
+}
+.banner-content{
+    text-align: justify;
+    margin-left: 5%;
+    color: white;
+    outline: 2%;
+    -webkit-text-stroke: 1px white;
+}
+#content-text{
+    text-align: center;
+    font-size: 70px;
+    padding-top: 30px;
+}
+.banner-content #h4{
+    font-size: 25px;
+}
+.banner-content #welcome{
+    font-size: 80px;
+    color: white;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+.banner-content #wlcm-note{
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 35px;
+    -webkit-text-stroke: 0px white;
+}
+#wlcm-btn{
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+}
+.banner-content h4{
+    font-size: 25px;
+}
+
+.Ads img{
+    padding-top: 4px;
+    height: 200px;
+    width: 68%;
+    margin-left: 16%;
+}
+
+.premium-con{
+    background-color: goldenrod;
+    width: 35%;
+    height: 350px;
+    border: 1px solid;
+    border-radius: 10%;
+    border: 1px solid goldenrod;
+    float: right;
+    margin-top: 10%;
+    margin-right: 32%;
+}
+.prem-note{
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Foldit', cursive;
+    font-family: 'Playfair', serif;
+    margin-top: 2%;
+    margin-left: 20%;
+    color: white;
+    
+}
+button:hover{
+    transform: scale(1.1);
+}
+#btn5{
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 20px;
+    border: 1px solid goldenrod;
+    padding: 10px 10px 10px 10px;
+    background-color: goldenrod;
+    color: white;
+}
+footer{
+    width: 100%;
+    padding-top: 100px;
+    height: 400px;
+    background: linear-gradient(rgba(50,50,69, 0.5), #2f2f2f), url(/images/ronaldo.rm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section1{
+    width: 24%;
+    height: 400px;
+    float: left;
+}
+.section1 h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: white;
+    padding-top:70px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+.section1 h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: white;
+    margin-left: 20%;
+    padding-top: 10px;
+}
+.section1 #facebook{
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    margin-right: 1%;
+}
+.section1 #twitter{
+    margin-top: 10%;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    margin-right: 1%;
+}
+.section1 #instagram{
+    margin-top: 10%;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    margin-right: 1%;
+}
+.section2{
+    width: 20%;
+    height: 400px;
+    float: left;
+}
+.section2 h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+    padding-top: 90px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+.section2 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.section2 p a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.section3{
+    width: 36%;
+    height: 400px;
+    float: left;
+}
+.section3 h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 2%;
+}
+.section3 p{
+    font-size: 18px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 7%;
+}
+.section3 .email{
+    width: 60%;
+    height: 40px;
+    background: #999;
+    outline: none;
+    border: 1px solid #999;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.section3 .btn{
+    width: 25%;
+    height: 43px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    margin-left: -1%;
+}
+.about{
+    width: 100%;
+    height: 250px;
+    background-color: maroon;
+    
+}
+.about h4{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2%;
+    color: white;
+}
+#about-p{
+    color: white;
+    font-size: 22px;
+    font-family: brus;
+    text-align: center;
+}
+
+/** Media Query For Homepage, Phones**/
+@media screen and (max-width: 600px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .banner{
+        height: 300px;
+        width: 100%;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+    .banner-content #welcome{
+        padding-top: 50px;
+        font-size: 30px;
+    }
+
+    .banner-content #wlcm-note{
+        padding-top: 40px;
+        padding-left: 40px;
+        font-size: 15px;
+        -webkit-text-stroke: -1px white;
+    }
+    #wlcm-btn{
+        font-size: 12px;
+    }
+    .container{
+        width: 100%;
+        
+    }
+    .grid-box {
+        height: 200px;
+        width: 100%;
+        position: relative;
+    }
+    .Ads img{
+        height: 150px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .Ads{
+        width: 100%;
+    }
+    
+    footer{
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(rgba(50,50,69, 0.5), #2f2f2f), url(/images/ronaldo.rm.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .section3{
+        display: none;
+    }
+    .section1{
+        width: 24%;
+        height: 100px;
+        float: left;
+        margin-left: 5%;
+        margin-top: -37%;
+    }
+    .section1 h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: white;
+        padding-top:70px;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    .section1 h4{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: white;
+        margin-left: 20%;
+        padding-top: 10px;
+    }
+    .section1 #facebook{
+        margin-left: 10%;
+        margin-top: 10%;
+        font-size: 15px;
+        border-radius: 50%;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        margin-right: 1%;
+    }
+    .section1 #twitter{
+        margin-top: 10%;
+        font-size: 15px;
+        border-radius: 20%;
+        padding-left: 5px;
+        color: white;
+        margin-right: -7%;
+    }
+    .section1 #instagram{
+        margin-top: 10%;
+        font-size: 15px;
+        border-radius: 20%;
+        padding: 10px;
+        color: white;
+        margin-right: 1%;
+    }
+    .section2{
+        width: 20%;
+        height: 300px;
+        float: left;
+        margin-left: 5%;
+        margin-top: 13%;
+    }
+    .section2 h4{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: white;
+    }
+
+    .section2 p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;   
+    }
+    .section2 p a{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:1024px){
+    .banner{
+        height: 520px;
+    }
+    .table-container{
+        width: 100%;
+        background-color: rgb(241, 236, 230)
+    }
+    .banner-content #welcome{
+        padding-top: 70px;
+        font-size: 60px;
+    }
+
+    .banner-content #wlcm-note{
+        padding-top: 70px;
+        padding-left: 40px;
+        font-size: 30px;
+        font-family: var(--font-family);
+        -webkit-text-stroke: -1px white;
+    }
+    #wlcm-btn{
+        font-size: 25px;
+    }
+    .Ads img{
+        height: 200px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .section2{
+        width: 20%;
+        height: 300px;
+        float: left;
+        padding-top: 100px;
+        margin-left: -23%;
+    }
+    .section1{
+        width: 24%;
+        height: 300px;
+        margin-left: 10%;
+        float: left;
+        margin-top: -15%;
+    }
+    .section3{
+        width: 36%;
+        height: 400px;
+        float: left;
+        margin-top: 10%;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+    #about-p{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    .section1 h3{
+        font-size: 30px;
+    }
+
+}
+
+
+/** Styling Football Tips Page **/
+
+#foot-wlcm{
+    font-size: 80px;
+    color: white;
+    padding-top: 150px;
+    text-align: center;
+    
+}
+.foot-banner{
+    text-align: justify;
+    padding-left: 50px;
+    color: rgb(39, 38, 38);
+    outline: 2%;
+}
+.footballbanner{
+    background-color: aquamarine;
+    background-image: url(../images/legends.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+#foot-note{
+    padding-top: 150px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.table-container{
+    width: 100%;
+    scrollbar-width: none;
+    background-color: #C4A484;
+    
+}
+table{
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 30px;
+    border-collapse: collapse;
+    background: linear-gradient(rgba(30,10,69, 0.3), #2f2f2f), url(/images/gamble\ coins.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+caption{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 5%;
+    font-family: 'Tilt Prism', cursive;
+    margin-top: 5%;
+}
+th{
+    border: 5px solid;
+    padding: 11px;
+    color: rgb(238, 245, 240);
+    border-radius: 20px;
+    font-size: 22px;
+    width: 15%;
+}
+td{
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+th:nth-child(1){
+    border: 2px solid ;
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+th:nth-child(2){
+    border: 2px solid white;
+    color: aliceblue;
+    background-color: steelblue;
+}
+th:nth-child(3){
+    border: 2px solid white;
+    color: aliceblue;
+    background-color: steelblue;
+}
+th:nth-child(4){
+    border: 0px solid white;
+    color: aliceblue;
+    background-color: green;
+}
+#footlist li{
+    font-size: 25px;
+}
+.specialbets-con{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    background-color: #2f2f2f;
+    margin-top: 5%;
+    padding-bottom: 50px;  
+}
+#spech2{
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Tilt Prism', cursive;
+    color: goldenrod;
+}
+#spech3{
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Tilt Prism', cursive;
+    color: goldenrod;
+}
+
+#specp{
+   font-size: 20px;
+   text-align: center;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+}
+.specialbets-con img{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+
+}
+
+/* Syling about page */
+.about-container{
+    height: 800px;
+    width: 100%;
+    background-color: #C4A484;
+}
+.about-img img{
+    width: 800px;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 10px;
+    border: 7px solid green;
+
+}
+.abouttext {
+    background-color: #2f2f2f;
+    height: 300px;
+    width: 650px;
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 45%;
+    border: 6px solid gray;
+    border-radius: 15px;
+}
+.abouttext h2{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 15px;
+}
+
+.abouttext p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 25px;
+}
+
+@media screen and (max-width: 600px){
+    .footballbanner{
+        height: 400px;
+        width: 100%;
+    }
+    .table-container{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    table{
+        margin-left: 5%;
+        width: 90%;
+
+    }
+    #foot-wlcm{
+        font-size: 40px;
+        padding-top: 100px;
+        white-space: inherit;
+    }
+    #foot-note{
+        padding-top: 70px;
+        font-size: 20px;
+        -webkit-text-stroke: 0px white;
+    }
+
+ td{
+    font-size: 10px;
+ }
+ tr{
+    font-size: 10px;
+ }
+ th{
+    font-size: 12px;
+ }
+ .footer{
+    height: 300px;
+    width: 100%;
+ }
+ caption{
+    font-size: 45px;
+ }
+}
+@media only screen and (min-width: 600px) and (max-width:1024px){
+    .footballbanner{
+        height: 400px;
+        width: 100%;
+    }
+    .table-container{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    table{
+        margin-left: 5%;
+        width: 90%;
+    }
+    #foot-wlcm{
+        font-size: 50px;
+        padding-top: 80px;
+        white-space: nowrap;
+    }
+    #foot-note{
+        padding-top: 150px;
+        font-size: 25px;
+        -webkit-text-stroke: 0px white;
+    }
+    
+
+ td{
+    font-size: 18px;
+ }
+ tr{
+    font-size: 18px;
+ }
+ th{
+    font-size: 25px;
+ }
+ footer{
+    height: 350px;
+    width: 100%;
+ }
+ caption{
+    font-size: 55px;
+ }
+ .section3 .btn{
+    width: 39%;
+ }
+
+}
+@media only screen and (min-width: 1400px) and (max-width:2500px){
+    html,body{
+        font-size: 120%;
+    }
+
+}
