@@ -293,10 +293,10 @@ footer{
 
 /** Media Query For Homepage, Phones**/
 @media screen and (max-width: 600px){
-    *{
+    /* *{
         padding: 0;
         margin: 0;
-    }
+    } */
     .banner{
         height: 300px;
         width: 100%;
@@ -478,6 +478,9 @@ footer{
     }
     .section1 h3{
         font-size: 30px;
+    }
+    .footer{
+        height: 500px;
     }
 
 }
