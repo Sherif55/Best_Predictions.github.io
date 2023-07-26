@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +8,7 @@
 :root{
   --font-family: 'Poppins', sans-serif;
   --font-family: 'Tilt Prism', cursive;
+  --font-family: 'Roboto', sans-serif;
   
 }
 body{
@@ -92,12 +94,15 @@ body{
     font-size: 80px;
     color: white;
     padding-top: 120px;
-    padding-left: 50px;
+    padding-left: 20px;
+    text-align: left;
+    white-space: nowrap;
 }
 .banner-content #wlcm-note{
     padding-top: 40px;
-    padding-left: 40px;
+    text-align: center;
     font-size: 35px;
+    font-family: 'Poppins', sans-serif;
     -webkit-text-stroke: 0px white;
 }
 #wlcm-btn{
@@ -158,7 +163,7 @@ button:hover{
 footer{
     width: 100%;
     padding-top: 100px;
-    height: 400px;
+    height: 500px;
     background: linear-gradient(rgba(50,50,69, 0.5), #2f2f2f), url("../images/ronaldo.rm.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -293,10 +298,7 @@ footer{
 
 /** Media Query For Homepage, Phones**/
 @media screen and (max-width: 600px){
-    /* *{
-        padding: 0;
-        margin: 0;
-    } */
+    
     .banner{
         height: 350px;
         width: 100%;
@@ -307,12 +309,12 @@ footer{
     }
     .banner-content #welcome{
         padding-top: 50px;
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .banner-content #wlcm-note{
         padding-top: 40px;
-        padding-left: 40px;
+        text-align: center;
         font-size: 15px;
         -webkit-text-stroke: -1px white;
     }
@@ -339,8 +341,8 @@ footer{
     
     footer{
         width: 100%;
-        height: 400px;
-        background: linear-gradient(rgba(50,50,69, 0.5), #2f2f2f), url('../images/ronaldo.rm.jpg');
+        height: 500px;
+        background: linear-gradient(rgba(50,50,69, 0.5), #2f2f2f), url("../images/ronaldo.rm.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -353,7 +355,7 @@ footer{
         height: 100px;
         float: left;
         margin-left: 5%;
-        margin-top: -37%;
+        margin-top: -25%;
     }
     .section1 h3{
         font-family: 'Times New Roman', Times, serif;
@@ -431,18 +433,18 @@ footer{
     }
     .banner-content #welcome{
         padding-top: 70px;
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .banner-content #wlcm-note{
         padding-top: 70px;
-        padding-left: 40px;
-        font-size: 30px;
+        text-align: center;
+        font-size: 28px;
         font-family: var(--font-family);
         -webkit-text-stroke: -1px white;
     }
     #wlcm-btn{
-        font-size: 25px;
+        font-size: 17px;
     }
     .Ads img{
         height: 200px;
@@ -528,7 +530,7 @@ table{
     margin-left: 5%;
     border-radius: 30px;
     border-collapse: collapse;
-    background: linear-gradient(rgba(30,10,69, 0.3), #2f2f2f), url(/images/gamble\ coins.jpg);
+    background: linear-gradient(rgba(30,10,69, 0.3), #2f2f2f), url("../images/gamble\ coins.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -586,6 +588,7 @@ th:nth-child(4){
     background-color: #2f2f2f;
     margin-top: 5%;
     padding-bottom: 50px;  
+    margin-bottom: 4%;
 }
 #spech2{
     font-size: 40px;
@@ -732,7 +735,7 @@ th:nth-child(4){
     font-size: 25px;
  }
  footer{
-    height: 350px;
+    height: 500px;
     width: 100%;
  }
  caption{
