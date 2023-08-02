@@ -4,11 +4,12 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: var(--font-family);
 }
 :root{
   --font-family: 'Poppins', sans-serif;
-  --font-family: 'Tilt Prism', cursive;
-  --font-family: 'Roboto', sans-serif;
+  /* --font-family: 'Tilt Prism', cursive;
+  --font-family: 'Roboto', sans-serif; */
   
 }
 body{
@@ -91,7 +92,7 @@ body{
     font-size: 25px;
 }
 .banner-content #welcome{
-    font-size: 80px;
+    font-size: 65px;
     color: white;
     padding-top: 120px;
     padding-left: 20px;
@@ -99,7 +100,7 @@ body{
     white-space: nowrap;
 }
 .banner-content #wlcm-note{
-    padding-top: 40px;
+    padding-top: 30px;
     text-align: center;
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
@@ -490,7 +491,7 @@ footer{
 }
 .footballbanner{
     background-color: aquamarine;
-    background-image: url(../images/legends.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5), #2f2f2f41), url(../images/legends.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
@@ -735,5 +736,113 @@ th:nth-child(4){
     html,body{
         font-size: 120%;
     }
-
 }
+
+.vip-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+    background: #f3f3f3;
+  }
+  @media screen and (max-width: 320px){
+    .vip-container{
+        flex-direction: column;
+        width: 100%;
+        height:auto;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .vip-container{
+        flex-direction: column;
+        width: 100%;
+        height:auto;
+    }
+  }
+
+  
+  .vip-card {
+    border: 1px solid #c1c1c1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+  }
+  @media screen and (max-width: 320px){
+    .vip-card{
+        width: 60%;
+        height: 300px;
+        margin-left: 10%! important;
+        padding: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .vip-card{
+        margin-left: 28%;
+    }
+  }
+
+  .vip-card p{
+    font-size: 13px;
+  }
+  @media screen and (max-width: 320px){
+    .vip-card p{
+        font-size: 10px;
+    }
+  }
+
+  
+  .vip-topic {
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 10px;
+    color: #2f2f2f;
+  }
+  @media screen and (max-width: 320px){
+    .vip-topic {
+        font-size: 13px;
+    }
+  }
+
+  
+  .vip-icon {
+    font-size: 20px;
+    color: #007bff; 
+  }
+  .vip-img{
+     width: 28%;
+     height: 80px;
+  }
+  @media screen and (max-width: 320px){
+    .vip-img{
+        width: 20%;
+        height: 40px;
+     }
+  }
+
+
+  .text-beside-icon {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  
+  .text-below-icon {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  
+  .vip-btn {
+    font-size: 15px;
+    padding: 5px 15px;
+    background: goldenrod;
+    border: none;
+    color: #fff;
+    margin-top: 3%;
+  }
+  
