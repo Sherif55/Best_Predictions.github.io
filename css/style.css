@@ -168,6 +168,7 @@ footer{
     background: linear-gradient(rgba(50,50,69, 0.5), #2f2f2f), url("../images/ronaldo.rm.jpg");
     background-repeat: no-repeat;
     background-position: center;
+
 }
 .section1{
     width: 24%;
@@ -468,7 +469,7 @@ footer{
         font-size: 30px;
     }
     .footer{
-        height: 500px;
+        height: 100%;
     }
 
 }
@@ -602,42 +603,494 @@ th:nth-child(4){
 
 }
 
-/* Syling about page */
-.about-container{
-    height: 800px;
+.aboutpage{
     width: 100%;
-    background-color: #C4A484;
+    height: 400px;
+    background: url(../images/About\ bacc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.about-img img{
-    width: 800px;
-    margin-top: 5%;
-    margin-left: 5%;
-    border-radius: 10px;
-    border: 7px solid green;
+.about-text{
+    width: 40%;
+    height: 150px;
+    float: left;
+    margin-top: 6%;
+}
+  .aboutpage p{
+    color: #fff;
+    font-size: 50px;
+    margin-left: 30%;
+  }
+  .aboutpage span{
+    color: #009578;
+  }
+  .aboutpage a{
+    font-size: 20px;
+    margin-left: 30%;
+    color: #fff;
+    text-decoration: none;
+  }
+  .aboutpage a:hover{
+    background-color: #0F403C;
+    color: #fff;
+  }
 
+  .aboutcontent {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
 }
-.abouttext {
-    background-color: #2f2f2f;
-    height: 300px;
-    width: 650px;
+.background-image {
+    width: 48%;
+    height: 550px;
+    margin-left: 8%;
+    margin-top: 4%;
+}
+
+.aboutcontent a{
+    padding: 10px 20px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #2f2f2f;
+    color: #2f2f2f;
+    font-size: 20px;
+    float: right;
+    margin-top: 23%;
+    margin-right: 30%;
+    cursor: pointer;
+    transition: .6s;
+}
+.aboutcontent a:hover{
+    transition: .6s;
+    background: #2F2F2F;
+    color: #fff;
+    border: none;
+}
+
+.card {
     position: absolute;
-    margin-top: -38%;
-    margin-left: 45%;
-    border: 6px solid gray;
-    border-radius: 15px;
-}
-.abouttext h2{
+    top: 38%; 
+    left: 70%; 
+    transform: translate(-50%, -50%);
+    background-color: #2F2F2F; 
+    padding: 20px;
     text-align: center;
+    width: 38%;
+    height: 250px;
+}
+.card-text {
     font-size: 35px;
-    color: white;
-    padding: 15px;
+}
+.card span{
+    color: #fff;
+    font-size: 20px;
 }
 
-.abouttext p{
+@media screen and (max-width: 280px){
+    .aboutcontent{
+        height: 650px;
+    }
+    .background-image{
+    width: 90%! important;
+    height: 200px! important;
+    }
+    .aboutcontent a{
+        padding: 10px 20px;
+        height: 30px;
+        background: transparent;
+        border: 2px solid #2f2f2f;
+        color: #2f2f2f;
+        font-size: 20px;
+        float: right;
+        margin-top: 120%! important;
+        margin-left: 7%;
+        font-size: 11px! important;
+    }
+    .card{
+        height: 250px! important;
+        width: 85%;
+        top: 54%! important;
+        left: 52.6%;
+        padding: 8px;
+    }
+    .card p{
+        font-size: 15px! important;
+    }
+    .card span{
+        font-size: 15px! important;
+    }
+}
+@media screen and (max-width: 320px){
+    .aboutcontent{
+        height: 650px;
+    }
+    .background-image{
+    width: 90%;
+    height: 200px;
+    }
+    .aboutcontent a{
+        padding: 10px 20px;
+        height: 30px;
+        background: transparent;
+        border: 2px solid #2f2f2f;
+        color: #2f2f2f;
+        font-size: 20px;
+        float: right;
+        margin-top: 100%! important;
+        margin-left: 7%;
+        font-size: 15px! important;
+    }
+    .card{
+        height: 300px;
+        width: 85%;
+        top: 52.5%;
+        left: 52.6%;
+        padding: 8px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+    .card span{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px){
+    .aboutcontent{
+        height: 650px;
+    }
+    .background-image{
+    width: 90%;
+    height: 200px;
+    }
+    .aboutcontent a{
+        padding: 10px 20px;
+        height: 30px;
+        background: transparent;
+        border: 2px solid #2f2f2f;
+        color: #2f2f2f;
+        font-size: 20px;
+        float: right;
+        margin-top: 40%;
+        margin-right: 35%;
+    }
+    .card{
+        height: 200px;
+        width: 87%;
+        top: 53%;
+        left: 52.6%;
+        padding: 14px;
+    }
+    .card p{
+        font-size: 25px;
+    }
+    .card span{
+        font-size: 16px;
+    }
+}
+
+
+
+  .subscribers{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background:linear-gradient(rgba(0,0,0,0.5),#2f2f2f41), url(../images/subscribers\ image.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+  .subcribers-card {
+    width: 250px;
+    margin: 30px;
+    margin-left: 7.5%;
+    padding: 10px;
     text-align: center;
+}
+.card-header {
+    font-size: 35px;
+    font-weight: bold;
+    color: #009578;
+}
+.card-text {
+    margin-top: 10px;
     font-size: 25px;
-    color: white;
-    padding: 25px;
+    color: #fff;
+}
+@media screen and (max-width: 280px){
+    .subscribers{
+        flex-direction: column;
+        height: 440px;
+    }
+    .subcribers-card{
+        margin: 5px! important;
+    }
+    .card-header{
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 320px){
+    .subscribers{
+        flex-direction: column;
+        height: 440px;
+    }
+    .subcribers-card{
+        margin: 5px;
+    }
+    .card-header{
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .subscribers{
+        flex-direction: column;
+        height: 440px;
+        justify-content: center;
+    }
+    .subcribers-card{
+        margin: 5px;
+        margin-left: 30%;
+    }
+    .card-header{
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 20px;
+    }
+}
+
+
+.feedback-section{
+    display: flex;
+    width: 100%;
+    height: 580px;
+    background: #cccccc;
+}
+.feedback-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    float: right;
+    margin-right: 5%;
+}
+
+.feedback-container h2{
+    text-align: center;
+}
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+input[type="submit"] {
+    background-color: #009578;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.client-review {
+    width: 55%;
+    margin: 0 auto;
+    padding: 30px;
+}
+.testimonial-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+.testimonial-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.client-name {
+    font-weight: bold;
+}
+@media screen and (max-width: 280px){
+    .feedback-section{
+        flex-direction: column;
+        padding: 0px;
+        height: 770px;
+    }
+    .feedback-container{
+        width: 90%;
+        height: 350px;
+        margin-left: 4%;
+        padding: 5px;
+    }
+    
+    .testimonial-container{
+        width: 90%;
+        height: 280px;
+        margin-left: 5%;
+        margin: 0%;
+    }
+    .testimonial-container h2{
+        font-size: 15px;
+    }
+    .testimonial-text{
+        font-size: 10px;
+    }
+    .feedback-container h2{
+        font-size: 15px;
+    }
+    .feedback-container p{
+        font-size: 10px;
+    }
+    input[type="text"],
+     textarea {
+    width: 90%;
+    padding: 4px;
+   }
+input[type="submit"] {
+    padding: 8px 18px;
+}
+}
+@media screen and (max-width: 320px){
+    .feedback-section{
+        flex-direction: column;
+        padding: 0px;
+        height: 770px;
+    }
+    .feedback-container{
+        width: 90%;
+        height: 350px;
+        margin-left: 4%;
+        padding: 5px;
+    }
+    
+    .testimonial-container{
+        width: 90%;
+        height: 280px;
+        margin-left: 5%;
+        margin: 0%;
+    }
+    .testimonial-container h2{
+        font-size: 15px;
+    }
+    .testimonial-text{
+        font-size: 10px;
+    }
+    .feedback-container h2{
+        font-size: 15px;
+    }
+    .feedback-container p{
+        font-size: 10px;
+    }
+    input[type="text"],
+     textarea {
+    width: 90%;
+    padding: 4px;
+   }
+input[type="submit"] {
+    padding: 8px 18px;
+}
+}
+
+@media screen and (max-width: 768px){
+    .feedback-section{
+        flex-direction: column;
+        padding: 0px;
+        height: 770px;
+    }
+    .feedback-container{
+        width: 90%;
+        height: 350px;
+        margin-left: 4%;
+        padding: 5px;
+    }
+    
+    .testimonial-container{
+        width: 90%;
+        height: 280px;
+        margin-left: 5%;
+        margin: 0%;
+    }
+    .testimonial-container h2{
+        font-size: 15px;
+    }
+    .testimonial-text{
+        font-size: 10px;
+    }
+    .feedback-container h2{
+        font-size: 15px;
+    }
+    .feedback-container p{
+        font-size: 10px;
+    }
+    input[type="text"],
+     textarea {
+    width: 90%;
+    padding: 4px;
+   }
+input[type="submit"] {
+    padding: 8px 18px;
+}
+}
+
+.advertisement{
+    width: 100%;
+    height: 300px;
+}
+#advertisement-img{
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 280px){
+    .advertisement{
+        height: 80px;
+    }
+    #advertisement-img{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 320px){
+    .advertisement{
+        height: 80px;
+    }
+    #advertisement-img{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 768px){
+    .advertisement{
+        height: 200px;
+    }
+    #advertisement-img{
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -677,7 +1130,7 @@ th:nth-child(4){
     font-size: 12px;
  }
  .footer{
-    height: 300px;
+    height: 100%;
     width: 100%;
  }
  caption{
